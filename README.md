@@ -1,5 +1,7 @@
 # AngularFrontendBoilerplate
 
+This is a work in progress but Angular CLI makes the work go a lot faster.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.6.
 
 ## Development server
