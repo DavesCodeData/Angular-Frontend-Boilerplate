@@ -5,6 +5,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { LoginComponent } from './components/login/login.component';
 
 const routes: Routes = [
+  //{ path: '', },
+
   { path: 'header', component: HeaderComponent },
 
   { path: 'login', component: LoginComponent },
