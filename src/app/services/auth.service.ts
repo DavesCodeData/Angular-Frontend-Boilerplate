@@ -11,7 +11,7 @@ import { ErrorHandlerService } from './error-handler.service';
   providedIn: 'root'
 })
 export class AuthService {
-  private url = "http://localhost:3000/auth/login";//use HttpClient
+  private url = "http://localhost:3000/students";//use HttpClient
 
   httpOptions: { headers: HttpHeaders } = {
     headers: new HttpHeaders({ "Content-Type": "application/json" }),
