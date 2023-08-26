@@ -11,7 +11,7 @@ import { ErrorHandlerService } from './error-handler.service';
   providedIn: 'root'
 })
 export class AuthService {
-  private url = "http://localhost:3000/students";//use HttpClient
+  private url = "http://localhost:3000/students";//use HttpClient you should connect this to the restapi-copy
 
   httpOptions: { headers: HttpHeaders } = {
     headers: new HttpHeaders({ "Content-Type": "application/json" }),

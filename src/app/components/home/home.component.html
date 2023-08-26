@@ -1,0 +1,181 @@
+<div class="home-container">
+  <!-- <h2>Home</h2> -->
+    <h1>Welcome to my website</h1>
+    <p>I am David Gamet. I am a University of Florida graduate and an aspiring computer programmer.</p>
+    <p>Here you will find my coding projects in Machine Learning, AI, and video games as well as some of my blender creations.</p>
+    <p>I created this website myself it is an AngularNodePostgreSQL stack with all my code available at the link below.</p>
+    <a href="https://github.com/DavesCodeData/Angular-Frontend-Boilerplate/tree/master/src">Visit my GitHub and view my source code</a>
+    <p>My website is organized in three parts so that while scrolling down I'll explain how I coded this website then I'll cover my Machine Learning algorithms and finally we'll go over some video games of mine. Enjoy!</p>
+    <!-- <p>Thanks for reading!</p> -->
+
+  <div class="part-one"> <h1>Part 1 of 3: How I created this website.</h1>
+    <p>Here are screen shots of my Angular application I'll explain how my code works with visuals on the left and text on the right.</p>
+    </div>
+
+    <div class="content">
+      <div class="image-container">
+        <img src="assets/angularSetUp.png" alt="Image">
+      </div>
+      <div class="text-container">
+        <h1>Here you can see the names of the files I have set up</h1>
+
+        <p>
+          Let's start with what is Angular. Specifically, Angular CLI. 
+          This is a piece of software that uses the Type Script langauge to code a website.
+          Angular CLI comes with lots of neat modules to make coding easier once you know
+          how to use them in your Type Script.  
+        </p>
+        <p>
+          Here you can see my organizational pattern. I have my website organized into components, services, models
+          and run them in the app files.
+        </p>
+        <p>
+          Lets take a look at the app portion of the code and I'll explain how my 
+          initial set up works!
+        </p>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="image-container">
+        <img src="assets/app.module.png" alt="Image">
+      </div>
+      <div class="text-container">
+        <h1> Getting started now lets look at the modules</h1>
+        <p>On lines 5-12 I have created all of these modules to do specific tasks. We will go over each of them.
+          The modules above line 5 are imports from the .angular file package specifically the angular-webpack package.
+        </p>
+        <p>
+          The imported Angular modules such as HttpClientModule are incredibly useful and necessary in creating
+          a full stack development. This is a crucail module to import because, it is what allows
+          us to connect this application to my Node.js server which is another program I created for handling the restAPI's
+          get, post, put and delete commands. But we'll get to that later.
+        </p>
+      </div>
+    </div>
+    
+    <div class="content">
+      <div class="image-container">
+        <img src="assets/app-routing.module.png" alt="Image">
+      </div>
+      <div class="text-container">
+        <h1>Next we will look at routing</h1>
+        <p>Routing works by creating paths to follow so that the application can run through the approprate components
+          and from there run my CSS, HTML, and Type Script files in the correct order to display content for you to see.
+        </p>
+        <p>
+          You may have noticed that the HomeComponent does not have the name of any component in its path and has been left blank!
+          This is entirly on purpose. Leaving the path to your home page blank is a convention of setting the websites display to the 
+          HTML and CSS of the home component for whenever there is no specified path. But there is a little more to this in that the
+          app needs specification as to what the default view in app.component.html will display.
+        </p>
+        <p>
+          So lets look at that next!
+        </p>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="image-container">
+        <img src="assets/app.component.html.png" alt="Image">
+      </div>
+      <div class="text-container">
+        <h1>The apps html file</h1>
+        <p>
+          This might not look like much but really this is the first html file of many to be read by the computer.
+          Here we set up the design of the website in that the header component will be displayed on top and the
+          footer component will be displayed on the bottom.
+        </p>
+        <p>
+          So you might be wondering "what is router-outlets?" And the answer is that these outlets are my components.
+          Each component has it's own html file that uses CSS for position and gets it's materials either from Angular materials
+          or through assests I created and placed in the assets folder such as the images you are seeing on the left. The specifics as to how these files are read will come from each 
+          components unique component.ts file and the configuration of the component will come from each components unique component.spec.ts file.
+        </p>
+        <p>
+          From here lets take a look at the first selection of this HTML file which is the header.
+        </p>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="image-container">
+        <img src="assets/header.component.png" alt="Image">
+      </div>
+      <div class="text-container">
+        <h1>The header component</h1>
+        <p>
+          This might not seem like much at first glance but here we are now importing a wonderful mechanic of Angular CLI.
+          We are now useing @angular/core which gives us the type decorator where we are creating a class with a name that we
+          select on. Do you recognize app-header? That is the name that we can be selected by in the app.component.html file 
+          and now run my headers HTML file and CSS file for this component.
+        </p>
+        <p>
+          With this in mind it is finally time to start seeing the app-routing.module.ts file in action by taking
+          a look at the headers HTML file.
+        </p>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="image-container">
+        <img src="assets/header.component.html.png" alt="Image">
+      </div>
+      <div class="text-container">
+        <h1>The headers HTML with router links in action</h1>
+        <p>
+          Now we are finally looking at the many clickable links in the application. Here we can now see my first use of
+          classes and routerLinks. You will notice on the routerLink for Home as discussed is purposfully left blank and 
+          I've added a comment to help explain the choice of routing. Here you can see that the different classes envlope 
+          different aspect of the HTML file. The reason for this is to make positioning easier in my CSS file.
+        </p>
+        <p>
+          From here it would be a good idea to look over the use of CSS in my application before following one of the routes
+          so that you know how I am position my materials.
+        </p>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="image-container">
+        <img src="assets/header.component.css.png" alt="Image">
+      </div>
+      <div class="text-container">
+        <h1>Positioning with CSS</h1>
+        <p>
+          Here you might recognize that many of the names with the periods in front of them are the same names as the
+          classes in my HTML file. That's because, this is a CSS file and I am using the classes of my HTML file for positioning and color.
+        </p>
+        <p>
+          Now that you know how I position the content I want to display from my HTML file you have seen in large part how 
+          an Angular component works. There is a little bit more to this but we'll get to that later.
+        </p>
+        <p>
+          Now that you've got the gist of my program lets follow one of the routes in my header.component.html file and see where
+          the home route takes us.
+        </p>
+      </div>
+    </div>
+    
+    <div class="content">
+      <div class="image-container">
+        <img src="assets/home.component.html.png" alt="Image">
+      </div>
+      <div class="text-container">
+        <h1>Home Component this is what you are currently viewing</h1>
+        <p>
+          The routerLink for Home in the head.component.html file has brought us to the home component.
+          For now the home.component.spec.ts and home.component.ts are the default code the Angular application has provided
+          so it's nothing new. The most prudent thing to show you is my html file. This is the largest html file of the website
+          and by far the most complicated. Here there are a lot more classes some new names like href, img src, and alt these are
+          unique attributes given for a variaty of reasons. The href contains the URL to my GitHub and acts as a hyperlink. The img src=
+          is meant to direct an element in this case a png file to my src file and from there follow a route to the png file. The alt 
+          indicates that the image is a key part of the webpage and that none visual browsers will indicate the lack of display.
+        </p>
+        <p>
+          The class "content" manly repeats to create the flow steps showing how I created this website.
+          From here lets look at how I positioned all of this by looking at the home components CSS file.
+        </p>
+      </div>
+    </div>
+
