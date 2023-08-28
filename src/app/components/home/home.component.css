@@ -16,7 +16,11 @@
     height: auto;
   }
   
+<<<<<<< HEAD
   .parts {
+=======
+  .part-one {
+>>>>>>> 7484098ec5d7b738f4adc9e33b32231707b9e9f0
     text-align: left;
     margin-bottom: 0px;
     margin-top: 0px;
