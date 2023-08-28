@@ -1,0 +1,49 @@
+.home-container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  p {
+    color: #333;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .parts {
+    text-align: left;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 25px;
+
+   }
+  
+  .content {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .image-container {
+    flex: 2; /* Image takes up more space */
+    padding: 10px;
+  }
+  
+  .image-container img {
+    width: 100%; /* Image stretches to container width */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .text-container {
+    flex: 1;
+    /* padding: 10px; */
+    height: 100%; /* Text container is same height as image */
+    overflow-y: auto; /* Add vertical scroll if needed */
+  }
+  
