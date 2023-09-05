@@ -11,7 +11,7 @@ import { ErrorHandlerService } from './error-handler.service';
   providedIn: 'root'
 })
 export class AuthService {
-  private url = "http://localhost:3000/students";//use HttpClient
+  private url = "http://localhost:3000/students";//use HttpClient you should connect this to the restapi-copy
 
   httpOptions: { headers: HttpHeaders } = {
     headers: new HttpHeaders({ "Content-Type": "application/json" }),
@@ -24,5 +24,16 @@ export class AuthService {
       first(),//first() imported above
       catchError(this.errorHandlerService.handleError<User>("login"))//pass in the type of error
     );
+  }
+}
+
+//added8-28-23
+export class ApiService {
+  private serverUrl = 'http://localhost:3000'; // Your Node.js server URL
+
+  constructor(private http: HttpClient) {}
+
+  saveData(data: any) {
+    return this.http.post(`${this.serverUrl}/api/save`, data);
   }
 }
