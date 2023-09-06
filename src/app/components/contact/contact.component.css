@@ -59,9 +59,30 @@ button {
     cursor: pointer;
 }
 
-footer {
+
+.contactdiscriptionbody {
     text-align: center;
-    padding: 1em 0;
-    background-color: #333;
-    color: #fff;
-}
+    margin-top: 10px;
+  }
+
+.content {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .image-container {
+    flex: 2; /* Image takes up more space */
+    padding: 10px;
+  }
+  
+  .image-container img {
+    width: 100%; /* Image stretches to container width */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .text-container {
+    flex: 1;
+    /* padding: 10px; */
+    height: 100%; /* Text container is same height as image */
+    overflow-y: auto; /* Add vertical scroll if needed */
+  }

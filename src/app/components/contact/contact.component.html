@@ -40,7 +40,7 @@
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" [(ngModel)]="email" required>
               
-                <label for="message">Message:</label>
+                <label for="message">Message(Please type N/A if none applicable):</label>
                 <textarea id="message" name="message" rows="4" [(ngModel)]="message" required></textarea>
               
                 <button (click)="sendJson()">Send</button>
@@ -55,9 +55,30 @@
               </p>
         </section>
     </main>
+    <div class="contactdiscriptionbody">
+        <div class="content">
+            <div class="image-container">
+              <img src="assets/nodeserver.png" alt="Image">
+            </div>
+            <div class="text-container">
+              <h1>The Node.js Server</h1>
+      
+              <p>
+                Here we will take a look at how the Angular app that is running this website talks to the backend. 
+                My node server is where the SQL commands for my restAPI are processed. I'll give you step by step explanatoin as to
+                how this all works in communicating to the postgreSQL database for storing any contact information that you hopefully
+                submitted above. 
+              </p>
+              <p>
+                Lets first look at the restAPI call on line 30.
+              </p>
+            </div>
+          </div>
+        </div>
+<!--     
     <footer>
         <p>&copy; 2023 Your Name</p>
-    </footer>
+    </footer> -->
 </body>
 </html>
 
