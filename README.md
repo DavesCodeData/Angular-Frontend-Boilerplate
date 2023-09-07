@@ -14,7 +14,7 @@ To run this development platfrom for my website follow these instructions
 
 Step 1: After creating a copy of this repository and opening it type in the terminal: `npm install -g @angular/cli` This will install the Angular packages.
 
-If you don't know how to open the terminal hit ctrl + ` and it will open.
+If you don't know how to open the terminal and you are using VS Code just press `ctrl + backtick` 
 
 Step 2: Add Angular materials by typing in the terminal: `ng add @angular/material`
 
