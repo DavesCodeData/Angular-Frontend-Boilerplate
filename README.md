@@ -2,6 +2,36 @@
 
 ![WebsiteHomePage](src\assets\WebsiteHomePage.png)
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 This is a work in progress but Angular CLI makes the work go a lot faster.
 
 Hi, I am creaing this website to display to recruiters in the feild of programming my growing talents in coding.
