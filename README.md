@@ -20,6 +20,6 @@ Step 3: Go to localhost://4200
 
 You can now view the website and start making your own adjustments.
 
-When you develop what something you like you can create a full stack development with a Node server.
+When you develop something you like you can create a full stack development with a Node server.
 
 Go to https://github.com/DavesCodeData/Node-Boilerplate.git and follow the README.md file to create a fullstack deployment.
