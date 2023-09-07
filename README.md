@@ -1,6 +1,6 @@
 # Davids-Website
 
-![WebsiteHomePage](Davids-Website\src\assets\WebsiteHomePage.png)
+![WebsiteHomePage](src\assets\WebsiteHomePage.png)
 
 This is a work in progress but Angular CLI makes the work go a lot faster.
 
